@@ -132,7 +132,7 @@
 
                     return false;
 
-                } elseif (page == plugin.settings.page) {
+                } else if (page == plugin.settings.page) {
 
                     return false;
 
