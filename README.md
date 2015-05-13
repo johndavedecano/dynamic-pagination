@@ -4,7 +4,10 @@ A very flexible dynamic pagination user interface utility.
 ![alt tag](https://raw.githubusercontent.com/johndavedecano/dynamic-pagination/master/dist/dynamic_menu.png)
 
 # Installation and Usage
-
+```
+bower install dynamic-pagination --save
+```
+# Mark Up
 ```
 <!DOCTYPE html>
 <html>
