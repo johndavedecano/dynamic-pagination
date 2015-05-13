@@ -51,7 +51,7 @@ pagination.update_count(100);
 update_page - Updates the selected paginations current page
 ```
 var pagination = $('.pagination').data('Dynamic_Pagination');
-pagination.update_page(2);
+pagination.update_page('next');
 ```
 # Events
 change - This will be the handler when current page is changed.
