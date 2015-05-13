@@ -1,0 +1,16 @@
+{
+  "name": "dynamic_pagination",
+  "version": "1",
+  "authors": [
+    "Dave Decano <johndavedecano@gmail.com>"
+  ],
+  "main": "dynamic_pagination.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
