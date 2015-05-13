@@ -45,11 +45,11 @@ bower install dynamic-pagination --save
 # API
 update_count - Updates the selected paginations count
 ```
-var pagination = $('.pagination').Dynamic_Pagination({ count : 100 });
+var pagination = $('.pagination').data('Dynamic_Pagination');
 pagination.update_count(100);
 ```
 update_page - Updates the selected paginations current page
 ```
-var pagination = $('.pagination').Dynamic_Pagination({ count : 100 });
+var pagination = $('.pagination').data('Dynamic_Pagination');
 pagination.update_page(2);
 ```
