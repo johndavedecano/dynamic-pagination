@@ -78,8 +78,6 @@
          */
         plugin.next = function() {
 
-            console.log('next');
-
             var next = plugin.settings.page + 1;
 
             if (next <= plugin.settings.count) {
@@ -164,20 +162,20 @@
 
             if (page <= 1) {
 
-                $element.find(plugin.settings.prev).css('visibility', 'hidden');
+                $('.prev').css('visibility', 'hidden');
 
             } else {
 
-                $element.find(plugin.settings.prev).css('visibility', 'visible');
+                $('.prev').css('visibility', 'visible');
             }
 
             if (page >= plugin.settings.count) {
 
-                $element.find(plugin.settings.next).css('visibility', 'hidden');
+                $('.next').css('visibility', 'hidden');
 
             } else {
 
-                $element.find(plugin.settings.next).css('visibility', 'visible');
+                $('.next').css('visibility', 'visible');
             }
         }
 
