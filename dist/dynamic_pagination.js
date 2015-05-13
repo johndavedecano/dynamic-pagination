@@ -55,16 +55,25 @@
 
             $(plugin.settings.ctex).text(plugin.settings.count);
         }
+
         /**
-         * update_page
-         * @param  {[type]} page [description]
-         * @return {[type]}      [description]
+         * [update_page description]
+         * @param  {[type]} page   [description]
+         * @param  {[type]} action [description]
+         * @return {[type]}        [description]
          */
-        plugin.update_page = function(page) {
+        plugin.update_page = function(page, action) {
 
             plugin.settings.page = page;
 
-            $(plugin.settings.tbox).val(plugin.settings.page);
+            if (action == 'next') {
+
+                plugin.next();
+
+            } else {
+
+                plugin.prev();
+            }
         }
         /**
          * next
