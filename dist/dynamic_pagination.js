@@ -78,7 +78,7 @@
          */
         plugin.next = function() {
 
-            var next = plugin.settings.page + 1;
+            var next = parseInt(plugin.settings.page) + 1;
 
             if (next <= plugin.settings.count) {
 
@@ -104,7 +104,7 @@
 
             console.log('prev');
 
-            var prev = plugin.settings.page - 1;
+            var prev = parseInt(plugin.settings.page) - 1;
 
             if (prev >= 1) {
 
