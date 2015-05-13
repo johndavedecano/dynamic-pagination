@@ -38,11 +38,11 @@
 
             $(plugin.settings.tbox).on('keypress', plugin.change_handler);
 
+            $(plugin.settings.prev).on('click', plugin.prev);
+
+            $(plugin.settings.next).on('click', plugin.next);
+
             plugin.check_pages(plugin.settings.page);
-
-            $element.find(plugin.settings.prev).on('click', plugin.prev);
-
-            $element.find(plugin.settings.next).on('click', plugin.next);
         }
         /**
          * update_count
