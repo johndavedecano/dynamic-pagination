@@ -11,8 +11,8 @@
         var defaults = {
               page : 1
             , count : 1
-            , prev : '.prev .pagination-previous'
-            , next : '.next .pagination-next'
+            , prev : '.pagination-previous'
+            , next : '.pagination-next'
             , tbox : '.pagination-counter-input'
             , ctex : '.pagination-pages-count'
             , change : function(data) {}
@@ -58,21 +58,18 @@
 
         /**
          * [update_page description]
-         * @param  {[type]} page   [description]
          * @param  {[type]} action [description]
          * @return {[type]}        [description]
          */
-        plugin.update_page = function(page, action) {
-
-            plugin.settings.page = page;
+        plugin.update_page = function(action) {
 
             if (action == 'next') {
 
-                plugin.next();
+                return plugin.next();
 
             } else {
 
-                plugin.prev();
+                return plugin.prev();
             }
         }
         /**
@@ -80,6 +77,8 @@
          * @return {Function} [description]
          */
         plugin.next = function() {
+
+            console.log('next');
 
             var next = plugin.settings.page + 1;
 
@@ -104,6 +103,8 @@
          * @return {[type]} [description]
          */
         plugin.prev = function() {
+
+            console.log('prev');
 
             var prev = plugin.settings.page - 1;
 
