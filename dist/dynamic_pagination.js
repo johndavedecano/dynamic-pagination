@@ -132,6 +132,10 @@
 
                     return false;
 
+                } elseif (page == plugin.settings.page) {
+
+                    return false;
+
                 } else {
 
                     plugin.settings.change(page);
