@@ -16,6 +16,7 @@
             , tbox : '.pagination-counter-input'
             , ctex : '.pagination-pages-count'
             , change : function(data) {}
+            , counter : '.pagination-counter'
         };
 
         var plugin = this;
@@ -104,8 +105,6 @@
          */
         plugin.prev = function() {
 
-            console.log('prev');
-
             var prev = parseInt(plugin.settings.page) - 1;
 
             if (prev >= 1) {
@@ -186,13 +185,13 @@
          */
         plugin.check_visibility = function() {
 
-            if (plugin.settings.count < 2) {
+            if (parsetInt(plugin.settings.count) < 2) {
 
-                $element.hide();
+                $(plugin.settings.counter).hide();
 
             } else {
 
-                $element.show();
+                $(plugin.settings.counter).show();
             }
         }
 
