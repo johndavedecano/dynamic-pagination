@@ -43,6 +43,8 @@
             $(plugin.settings.next).on('click', plugin.next);
 
             plugin.check_pages(plugin.settings.page);
+
+            plugin.check_visibility();
         }
         /**
          * update_count
@@ -176,6 +178,21 @@
             } else {
 
                 $('.next').css('visibility', 'visible');
+            }
+        }
+        /**
+         * [check_visibility description]
+         * @return {[type]} [description]
+         */
+        plugin.check_visibility = function() {
+
+            if (plugin.settings.count < 2) {
+
+                $element.hide();
+
+            } else {
+
+                $element.show();
             }
         }
 
