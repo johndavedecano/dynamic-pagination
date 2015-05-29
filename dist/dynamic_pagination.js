@@ -185,7 +185,9 @@
          */
         plugin.check_visibility = function() {
 
-            if (parsetInt(plugin.settings.count) < 2) {
+            var page = parseInt(plugin.settings.count);
+
+            if (page < 2) {
 
                 $(plugin.settings.counter).hide();
 
